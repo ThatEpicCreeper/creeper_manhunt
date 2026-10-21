@@ -15,6 +15,7 @@ execute if score dummy inGame matches 1 run execute if score dummy countdown mat
 execute if score dummy inGame matches 1 run execute if score dummy countdown matches 0 run execute as @a at @s run playsound minecraft:block.note_block.pling master @s ~ ~ ~ 1 2 
 execute if score dummy inGame matches 1 run execute if score dummy countdown matches 0 run execute as @a at @s run execute as @a at @s run playsound minecraft:entity.wither.death master @s ~ ~ ~ 0.5 0.6
 execute if score dummy inGame matches 1 run execute if score dummy countdown matches 0 run effect give @a minecraft:saturation 1 10 true
+execute if score dummy inGame matches 1 run execute if score dummy countdown matches 0 run execute as @a[team=hunters] at @s run function cmh:give_self_compass
 
 execute if score dummy inGame matches 1 run execute if score dummy countdown matches 1.. run execute as @a[team=!spec] at @s run attribute @s minecraft:movement_speed modifier add begin -100 add_value
 execute if score dummy inGame matches 1 run execute if score dummy countdown matches 1.. run execute as @a[team=!spec] at @s run attribute @s minecraft:jump_strength modifier add begin -100 add_value

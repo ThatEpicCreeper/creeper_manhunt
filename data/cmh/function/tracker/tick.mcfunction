@@ -4,13 +4,7 @@ execute as @a[team=hunters] at @s if items entity @s weapon.offhand minecraft:co
 execute as @a at @s run execute store result score @s dimension run data get entity @s Dimension 1
 
 execute as @a[team=hunters] run scoreboard players set @s sameDim 0
-execute as @a[team=hunters] at @s if dimension minecraft:overworld if entity @a[team=runners,gamemode=!spectator] run scoreboard players set @s sameDim 1
-execute as @a[team=hunters] at @s if dimension minecraft:the_nether if entity @a[team=runners,gamemode=!spectator] run scoreboard players set @s sameDim 1
-execute as @a[team=hunters] at @s if dimension minecraft:the_end if entity @a[team=runners,gamemode=!spectator] run scoreboard players set @s sameDim 1
+execute as @a[team=hunters] at @s run execute if entity @a[team=runners,gamemode=!spectator,distance=0..] run scoreboard players set @s sameDim 1
 
-execute as @a[team=hunters] if dimension minecraft:overworld if entity @a[team=runners,gamemode=!spectator] run scoreboard players set @s sameDim 1
-execute as @a[team=hunters] if dimension minecraft:the_nether if entity @a[team=runners,gamemode=!spectator] run scoreboard players set @s sameDim 1
-execute as @a[team=hunters] if dimension minecraft:the_end if entity @a[team=runners,gamemode=!spectator] run scoreboard players set @s sameDim 1
-
-execute as @a[team=hunters,scores={sameDim=0}] run title @s actionbar {"text":"No runners in your dimension!","color":"red"}
-
+execute if score dummy inGame matches 1.. run execute as @a[team=hunters,scores={sameDim=0}] at @s run title @s actionbar {"text":"No runners in your dimension!","color":"red"}
+execute if score dummy inGame matches 1.. run execute as @a[team=hunters,scores={sameDim=1..}] at @s run title @s actionbar {"text":"","color":"red"}

@@ -5,6 +5,8 @@ effect give @a minecraft:fire_resistance 5 10 true
 effect give @a minecraft:saturation 5 10 true
 execute as @a run damage @s 1 minecraft:out_of_world
 effect give @a minecraft:saturation 5 10 true
+effect give @a minecraft:weakness 5 10 true
+effect give @a minecraft:mining_fatigue 5 10 true
 time set 0
 execute as @a[team=spec] at @s run gamemode spectator @s
 execute as @r[team=runner] at @s run spawnpoint @a ~ ~ ~
