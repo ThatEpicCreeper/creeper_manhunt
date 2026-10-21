@@ -1,0 +1,1 @@
+$item replace entity @s weapon.offhand with minecraft:compass[minecraft:custom_data={cmh_runner_tracker:1b},custom_name=[{"text":"Runner Tracker","italic":false,"color":"aqua"}],minecraft:lodestone_tracker={target:{pos:[I;$(x),$(y),$(z)],dimension:"$(dimension)"},tracked:false}] 1

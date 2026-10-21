@@ -1,0 +1,2 @@
+execute as @a[team=hunters] at @s if items entity @s weapon.mainhand minecraft:compass[minecraft:custom_data={cmh_runner_tracker:1b}] run function cmh:tracker/update
+execute as @a[team=hunters] at @s if items entity @s weapon.offhand minecraft:compass[minecraft:custom_data={cmh_runner_tracker:1b}] run function cmh:tracker/update

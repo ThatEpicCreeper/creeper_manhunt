@@ -9,6 +9,10 @@ scoreboard objectives add specRunnerHP health
 scoreboard objectives add trackingRunner dummy
 scoreboard objectives add countdown dummy
 scoreboard objectives add inGame dummy
+scoreboard objectives add dimension dummy
+scoreboard objectives add runnerID dummy
+scoreboard objectives add useCompass minecraft.used:minecraft.compass
+scoreboard objectives add manhunt-options trigger
 
 # create teams
 team add hunters

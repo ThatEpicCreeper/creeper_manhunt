@@ -1,0 +1,2 @@
+clear @s compass
+give @s minecraft:compass[minecraft:custom_data={cmh_runner_tracker:1b},minecraft:lodestone_tracker={target:{pos:[I;0,64,0],dimension:"minecraft:overworld"},tracked:false},custom_name=[{"text":"Runner Tracker","italic":false,"color":"aqua"}]] 1
