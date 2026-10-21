@@ -11,6 +11,7 @@ scoreboard objectives add countdown dummy
 scoreboard objectives add inGame dummy
 scoreboard objectives add dimension dummy
 scoreboard objectives add runnerID dummy
+scoreboard objectives add sameDim dummy
 scoreboard objectives add useCompass minecraft.used:minecraft.compass
 scoreboard objectives add manhunt-options trigger
 

@@ -1,5 +1,5 @@
 
-execute if score dummy countdown matches -10.. run scoreboard players remove dummy countdown 1
+execute if score dummy countdown matches -1000.. run scoreboard players remove dummy countdown 1
 
 execute if score dummy inGame matches 1 run execute if score dummy countdown matches 60.. run title @a times 0 21 1
 execute if score dummy inGame matches 1 run execute if score dummy countdown matches 100 run execute as @a at @s run playsound minecraft:block.note_block.pling master @s ~ ~ ~ 1 1
