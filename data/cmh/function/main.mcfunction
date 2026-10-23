@@ -12,13 +12,13 @@ function cmh:game_start
 function cmh:tracker/tick
 
 # death give compass
-execute as @a[scores={onDeath=1..}] run function cmh:give_self_compass
+execute as @a[scores={onDeath=1..}] at @s run function cmh:give_self_compass
 execute as @a[scores={onDeath=1..},team=runners] run scoreboard players remove dummy runnersAlive 1
 execute as @a[scores={onDeath=1..},team=runners] run gamemode spectator @s
 execute as @a[scores={onDeath=1..}] run scoreboard players set @s onDeath 0
 
 # trigger compass
-execute as @a[scores={getCompass=1..}] run function cmh:give_self_compass
+execute as @a[scores={getCompass=1..}] at @s run function cmh:give_self_compass
 execute as @a[scores={getCompass=1..}] run scoreboard players set @s getCompass 0
 scoreboard players enable @a getCompass
 
